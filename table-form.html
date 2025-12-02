@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>таблицы и формы</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <img src="img/sunrise.svg" alt="логотип" width="50px">
+        <h1>Бьерн Страуструп</h1>
+
+        <nav>
+            <ul class="links">
+                <li><a href=index.html#about>Введение</a></li>
+                <li><a href="index.html#articles">Информация</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <table class="exampleTable">
+        <thead>
+            <caption>Счёт</caption>
+            <tr>
+                <th>Наименование</th>
+                <th>Цена</th>
+                <th>Кол-во</th>
+                <th>Стоимость</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Ручка</td>
+                <td>50 &#8381;</td>
+                <td rowspan="2">4</td>
+                <td>200</td>
+            </tr>
+            <tr>
+                <td>Карандаш</td>
+                <td>25 &#8381;</td>
+
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>Староста</td>
+                <td>50000 &#8381;</td>
+                <td>1</td>
+                <td>50000</td>
+            </tr>
+            <tr>
+                <td>Никитосик-Абрикосик</td>
+                <td>0 &#8381;</td>
+                <td>1.5</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td colspan="3">Итого</td>
+                <td>400 &#8381;</td>
+            </tr>
+
+        </tbody>
+    </table>
+
+    <form id="register" action="">
+
+        <div class="select_item">
+            <label for="theme">Тема</label><br>
+            <select name="theme" id="theme">
+                <option value="site">По поводу сайта</option>
+                <option value="coop">По поводу сотрудничества</option>
+                <option value="work">По поводу работы</option>
+            </select> <br>
+        </div>
+
+
+
+        <div class="form_item">
+            <label for="name">Ваше имя</label><br>
+            <input type="text" id="name" name="name" placeholder="Имя" required><br>
+
+            <label for="EMail">Введите ваш EMail</label><br>
+            <input type="text" id="EMail" name="EMail" placeholder="EMail" required><br>
+
+        </div>
+
+        <div class="radio_item">
+            <input type="radio" id="student" name="role" checked>
+            <label for="student">Студент</label><br>
+            <input type="radio" id="teacher" name="role">
+            <label for="teacher">Учитель</label><br>
+        </div>
+
+        <div class="massage_item">
+            <label for="about">Сообщение</label><br>
+            <textarea name="about" id="about" placeholder="ОБРАЩЕНИЕ " rows="10" cols="10"></textarea><br>
+        </div>
+
+
+
+        <div class="button_item">
+            <input type="submit" value="Отправить">
+            <input type="reset">
+        </div>
+    </form>
+
+    <footer>
+        <p style="font-size: 1rem;">Звягинцев Михаил, 2025 г.</p>
+        <p style="font-size: 1rem;">Вы можете найти меня <a target="_blank"
+                href="https://ru.wikipedia.org/wiki/%D0%9E%D1%81%D0%B1%D0%BE%D1%80%D0%BD,_%D0%9E%D0%B7%D0%B7%D0%B8">здесь</a>
+        </p>
+        <p style="font-size: 1rem;"><a href="bjozzzy@mail.ru">bjozzy@mail.ru</a></p>
+        <p style="font-size: 1rem;">Номер телефона: <a href="tel:89511111576">8(951)-111-15-76</a></p>
+
+        <a target="_blank" href="https://rutube.ru/video/c6cc4d620b1d4338901770a44b3e82f4/">
+            <img src="img/rutube.webp" alt="Ссылка автора" width="50" height="50">
+        </a>
+        <a target="_blank" href="https://vk.com/midis">
+            <img src="img/vk.png" alt="Ссылка автора" width="50" height="50">
+        </a>
+    </footer>
+
+</body>
+
+</html>
